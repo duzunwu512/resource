@@ -1,0 +1,8 @@
+https://blog.csdn.net/xsgnzb/article/details/71552606
+
+通过实现HandlerMethodArgumentResolver接口，给springMvc的Controller的方法注入自定义参数
+https://blog.csdn.net/nnsword/article/details/76260355
+
+
+SpringBoot 自定义方法参数解析器HandlerMethodArgumentResolver
+https://blog.csdn.net/supersub000/article/details/80108639
