@@ -1,0 +1,193 @@
+<html>
+	<head></head>
+	<style type="text/css">
+
+.ui.inverted.dimmer {
+    background-color: hsla(0,0%,100%,.85);
+}
+.dimmed.dimmable>.ui.animating.dimmer, .dimmed.dimmable>.ui.visible.dimmer, .ui.active.dimmer {
+    display: block;
+    opacity: 1;
+}
+.ui.dimmer {
+    display: none;
+    position: absolute;
+    top: 0!important;
+    left: 0!important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.85);
+    opacity: 0;
+    line-height: 1;
+    animation-fill-mode: both;
+    animation-duration: .5s;
+    transition: background-color .5s linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    will-change: opacity;
+    z-index: 1000;
+}
+
+
+
+.ui.inverted.dimmer .ui.massive.loader, .ui.massive.loader {
+    width: 4.57142857rem;
+    height: 4.57142857rem;
+    font-size: 1.71428571em;
+}
+.ui.inverted.dimmer .ui.loader, .ui.loader {
+    width: 2.28571429rem;
+    height: 2.28571429rem;
+    font-size: 1em;
+}
+.ui.inverted.dimmer .ui.loader {
+    color: rgba(0,0,0,.87);
+}
+.ui.massive.text.loader {
+    min-width: 4.57142857rem;
+    padding-top: 5.35714286rem;
+}
+.ui.dimmer .ui.loader {
+    color: hsla(0,0%,100%,.9);
+}
+.ui.text.loader {
+    min-width: 2.28571429rem;
+    padding-top: 3.07142857rem;
+}
+.ui.text.loader {
+    width: auto!important;
+    height: auto!important;
+    text-align: center;
+    font-style: normal;
+}
+.ui.dimmer .loader {
+    display: block;
+}
+.ui.loader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    text-align: center;
+    z-index: 1000;
+    transform: translateX(-50%) translateY(-50%);
+}
+.text.massive {
+    font-size: 1.71428571rem;
+}
+
+
+user agent stylesheet
+div {
+    display: block;
+}
+.ui.dimmer {
+    display: none;
+    position: absolute;
+    top: 0!important;
+    left: 0!important;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.85);
+    opacity: 0;
+    line-height: 1;
+    animation-fill-mode: both;
+    animation-duration: .5s;
+    transition: background-color .5s linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    will-change: opacity;
+    z-index: 1000;
+}
+
+.ui.inverted.dimmer .ui.loader:before {
+    border-color: rgba(0,0,0,.1);
+}
+.ui.dimmer .ui.loader:before {
+    border-color: hsla(0,0%,100%,.15);
+}
+.ui.massive.loader:after, .ui.massive.loader:before {
+    width: 4.57142857rem;
+    height: 4.57142857rem;
+    margin: 0 0 0 -2.28571429rem;
+}
+.ui.loader:after, .ui.loader:before {
+    width: 2.28571429rem;
+    height: 2.28571429rem;
+    margin: 0 0 0 -1.14285714rem;
+}
+.ui.loader:after, .ui.loader:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+.ui.loader:before {
+    border-radius: 500rem;
+    border: .2em solid rgba(0,0,0,.1);
+}
+.ui.inverted.dimmer .ui.loader:after {
+    border-color: #767676 transparent transparent;
+}
+.ui.dimmer .ui.loader:after {
+    border-color: #fff transparent transparent;
+}
+.ui.massive.loader:after, .ui.massive.loader:before {
+    width: 4.57142857rem;
+    height: 4.57142857rem;
+    margin: 0 0 0 -2.28571429rem;
+}
+.ui.loader:after, .ui.loader:before {
+    width: 2.28571429rem;
+    height: 2.28571429rem;
+    margin: 0 0 0 -1.14285714rem;
+}
+.ui.loader:after {
+    animation: loader .6s linear;
+    animation-iteration-count: infinite;
+    border-radius: 500rem;
+    border-color: #767676 transparent transparent;
+    border-style: solid;
+    border-width: .2em;
+    box-shadow: 0 0 0 1px transparent;
+}
+.ui.loader:after, .ui.loader:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(359deg)
+	}
+}
+
+
+	</style>
+	<body>
+		<div class="ui inverted active dimmer">
+	        <div class="ui massive text loader"></div>
+	    </div>
+	</body>
+
+</html>
