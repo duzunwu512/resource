@@ -1,0 +1,99 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>横线效果</title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">	
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	
+	
+    <style>
+	body{
+		padding: 10px;
+	}
+        
+	.my{			       
+		   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEQ5RDgxQzc2RjQ5MTFFMjhEMUNENzFGRUMwRjhBRTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEQ5RDgxQzg2RjQ5MTFFMjhEMUNENzFGRUMwRjhBRTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDlEODFDNTZGNDkxMUUyOEQxQ0Q3MUZFQzBGOEFFNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0RDlEODFDNjZGNDkxMUUyOEQxQ0Q3MUZFQzBGOEFFNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvXFWFAAAAAYSURBVHjaYvj//z8D0/Pnz/8zgFgAAQYAS5UJscReGMIAAAAASUVORK5CYII=) 
+			repeat-x scroll 0 10px;
+			
+	}
+	.myselected{
+		    border: 1px dotted #2196f3;
+	}
+
+	
+	
+	.wrap {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+        .wrap div {
+            line-height: 20px;
+        }
+        /*CSS伪类用法*/
+        .wrap div:after, .wrap div:before {
+            position: absolute;
+            top: 50%;
+            background: #ddd;
+            content: "";
+            height: 1px;
+            width: 45%;
+        }
+        /*调整背景横线的左右距离*/
+        .wrap div:before {
+            left: 0;
+        }
+        .wrap div:after {
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div >
+	<div class="card">
+		<div class="card-body" style="margin-top:200px">
+			<div >
+				<div class="my">
+					<div style="float:right; z-index10;background-color: #fff; padding:0px 10px;"></div>
+					<div style=" z-index10;background-color: #fff;    display: inline-block; padding:0px 10px;"><i class="fa fa-angle-right" style="padding:3px;"></i>left</div>
+					<div class="clear"></div>
+				</div>
+				<div class="content hidden">
+					<p>11111</p>
+					<p>22222222</p>
+					<p>333333</p>
+					<p>44444444</p>
+					<p>555555555</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</br></br>
+	</br>
+	</br>
+	</br>
+	<div class="wrap">
+		<div>暂无数据</div>
+	</div>
+	
+</div>
+</body>
+<script style="text/javascript">
+$(".my").on("click", function(){
+	console.log("ssssss");
+	$(this).parent().toggleClass("myselected");
+	$(this).find("i").toggleClass("fa-rotate-90");
+	$(this).next(".content").toggleClass("hidden");
+});
+</script>
+</html>
+ 
