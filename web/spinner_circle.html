@@ -1,0 +1,96 @@
+<html>
+	<head></head>
+	<style type="text/css">
+.loading-overlay .loading-icon {
+    position: relative;
+    padding: 5rem;
+    display: block;
+}
+
+
+
+.loading-overlay {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	align-items: center;
+	display: none;
+	justify-content: center;
+	overflow: hidden;
+	z-index: 999
+}
+
+.loading-overlay.is-active {
+	display: flex
+}
+
+.loading-overlay.is-full-page {
+	position: fixed
+}
+
+
+.loading-overlay .loading-background {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #7f7f7f;
+	background: hsla(0,0%,100%,.5)
+}
+
+.loading-icon {
+    position: relative;
+    padding: 5rem;
+    display: block;
+}
+
+.loading-overlay.is-full-page .loading-icon:after {
+    top: calc(50% - 2.5em);
+    left: calc(50% - 2.5em);
+    width: 5em;
+    height: 5em;
+}
+.loading-overlay .loading-icon:after {
+    animation: spinAround .5s infinite linear;
+    border: 2px solid #d2d6e3;
+    border-radius: 100%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    position: relative;
+    width: 1em;
+    position: absolute;
+    top: calc(50% - 1.5em);
+    left: calc(50% - 1.5em);
+    width: 3em;
+    height: 3em;
+    border-width: .25em;
+}
+
+
+@keyframes spinAround {
+	0% {
+		transform: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(359deg)
+	}
+}
+
+	</style>
+	<body>
+		<div id="app">
+			<div class="loading-overlay is-active is-full-page">
+				<div class="loading-background"></div>
+				<div class="loading-icon"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
