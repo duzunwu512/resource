@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jquery蓝色分步步骤进度条代码演示_大头网</title>
+
+<link type="text/css" rel="stylesheet" href="css/lib/bootstrap.min.css" />
+<!--<link rel="stylesheet/less" type="text/css" href="css/less/style.less?1.00" />
+<script type="text/javascript" src="js/lib/less.js"></script>-->
+<link type="text/css" rel="stylesheet" href="css/less/style.css">
+
+</head>
+<body>
+<!-- 代码 开始 -->
+<!--在data-step 中输入你想展示的默认步骤 若不填写 则默认为1-->
+<div class="container">
+	<ul class="nav nav-pills nav-justified step step-arrow">
+		<li>
+			<a>步骤 1</a>
+		</li>
+		<li>
+			<a>步骤 2</a>
+		</li>
+		<li>
+			<a>步骤 3</a>
+		</li>
+		<li>
+			<a>步骤 4</a>
+		</li>
+		<li>
+			<a>步骤 5</a>
+		</li>
+	</ul>
+	<ul class="nav nav-pills nav-justified step step-square" data-step="2">
+		<li>
+			<a>步骤 1</a>
+		</li>
+		<li>
+			<a>步骤 2</a>
+		</li>
+		<li>
+			<a>步骤 3</a>
+		</li>
+		<li>
+			<a>步骤 4</a>
+		</li>
+		<li>
+			<a>步骤 5</a>
+		</li>
+	</ul>
+	<ul class="nav nav-pills nav-justified step step-round" data-step="3">
+		<li>
+			<a>步骤 1</a>
+		</li>
+		<li>
+			<a>步骤 2</a>
+		</li>
+		<li>
+			<a>步骤 3</a>
+		</li>
+		<li>
+			<a>步骤 4</a>
+		</li>
+		<li>
+			<a>步骤 5</a>
+		</li>
+	</ul>
+	<ul class="nav nav-pills nav-justified step step-progress" data-step="4">
+		<li>
+			<a>步骤 1<span class="caret"></span></a>
+		</li>
+		<li>
+			<a>步骤 2<span class="caret"></span></a>
+		</li>
+		<li>
+			<a>步骤 3<span class="caret"></span></a>
+		</li>
+		<li>
+			<a>步骤 4<span class="caret"></span></a>
+		</li>
+		<li>
+			<a>步骤 5<span class="caret"></span></a>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/lib/lib.js"></script>
+<script type="text/javascript">
+$(function() {
+	bsStep();
+	//bsStep(i) i 为number 可定位到第几步 如bsStep(2)/bsStep(3)
+})
+</script>
+<!-- 代码 结束 -->
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>来源：<a href="http://www.datouwang.com/" target="_blank">大头网</a></p>
+<p>转载请注明出处，此代码仅供学习交流，请勿用于商业用途。</p>
+<p><script src="http://www.datouwang.com/img/js/demo_ad.js"></script><center style="display:none"><script src="http://www.datouwang.com/img/js/demo_tj.js"></script></center></p>
+</div>
+
+</body>
+</html>
