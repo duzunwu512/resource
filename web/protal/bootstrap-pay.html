@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>Bootstrap 4 Website Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dge.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="dge.js"></script>
+	<style>
+
+	</style>
+</head>
+<body data-spy="scroll" data-target=".header" data-offset="0">
+	<nav class="navbar navbar-expand-sm bg-light navbar-light top-main-nav">
+		<div class="navbar-brand logo" href="#"><img src="dge-logo.png" alt="Dge"></div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link nav-link-dge" href="#">链接</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-dge" href="#">链接</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-dge" href="#">链接</a>
+				</li> 
+				<li class="nav-item" style="">
+					<a class="nav-link nav-link-dge" href="#">链接</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-dge" href="#">链接</a>
+				</li>   
+			</ul>
+			<ul class="navbar-nav ml-auto ">
+				<li class="nav-item">
+					<a class="nav-link-login" href="#">链接1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link-login " href="#">链接2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link-login " href="#">链接3</a>
+				</li> 
+				<li class="nav-item" style="">
+					<a class="nav-link-login " href="#">链接4</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link-login" href="#">微信登录</a>
+				</li>   
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container container1000">		
+		<div class="row">
+			<div class="col-sm-6 offset-sm-3">			
+				<div style="padding: 50px;">
+					<h2>￥20.00元</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="border-bottom: solid 1px #ddd;">
+			<div >
+				<p>你好，XXXX！请选择支付方式</p>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-12">	
+				<div >微信支付</div>
+				<div>支付宝支付</div>
+			</div>
+			
+		</div>
+	</div>
+    <footer class="footer">
+      <div class="">
+        <div><span class="text-muted">版权所有 © 华为软件技术有限公司 2018 保留一切权利  </span></div>
+		<div><span class="text-muted">苏ICP备17040376号-5 苏B2-20130048号</span></div>
+		
+      </div>
+    </footer>
+</body>
+<script type="text/javascript">
+	$(".index-top-menu .nev-menu-top li > a").on("click", function(){
+		$.each($(".index-top-menu .nev-menu-top li > a"), function(i, n){
+			$(this).removeClass("active");
+		});
+		
+		if(!$(this).hasClass("active")){
+			$(this).addClass("active");
+		}
+		
+	});
+</script>
+</html>
