@@ -11,34 +11,6 @@
 	<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	<script src="dge.js"></script>
 	<style>
-#alipay-pay {
-    background: url(img/paystyle_new.png) no-repeat 0px 0px;
-    display: inline-block;
-    width: 120px;
-    height: 41px;
-    line-height: 40px;
-}
-
-
-#wechat-pay {
-    border: 1px solid #ddd;
-    width: 140px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 40px;
-    text-align: center;
-    display: inline-block;
-    background: url(img/paystyle_new.png) 0px -85px no-repeat;
-}
-.fl {
-    float: left;
-}
-
-.pay-box{
-	margin-top: 20px;
-	display: inherit;
-}
-
 	</style>
 </head>
 <body data-spy="scroll" data-target=".header" data-offset="0">
@@ -101,62 +73,33 @@
 	<div class="container container1000">		
 		<div class="row">
 			<div class="col-sm-3">			
-				<div class="d-block my-3">
-	              <div class="custom-control custom-radio">
-	                <input id="credit" name="benumber" type="radio" class="custom-control-input"  required>
-	                <label class="custom-control-label" for="credit">半年会员10元</label>
-	              </div>
-	              <div class="custom-control custom-radio">
-	                <input id="debit" name="benumber" type="radio" class="custom-control-input" checked required>
-	                <label class="custom-control-label" for="debit">一年会员20元</label>
-	              </div>
-	              <div class="custom-control custom-radio">
-	                <input id="paypal" name="benumber" type="radio" class="custom-control-input" required>
-	                <label class="custom-control-label" for="paypal">终身会员50元</label>
-	              </div>
-	            </div>
-			</div>
-			<div class="col-sm-6">			
-				<div style="padding: 50px;">
-					<h2>需支付：￥20.00元</h2>
+				<div class="card" style="width: 18rem; margin-top: 20px;">
+				  <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1661464de98%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1661464de98%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1640625%22%20y%3D%2296.271875%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+				  <div class="card-body">
+				    <h5 class="card-title">nickname</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				  <ul class="list-group list-group-flush" style="border-bottom:none;border-top:none;">
+				    <li class="list-group-item">Cras justo odio</li>
+				    <li class="list-group-item">Dapibus ac facilisis in</li>
+				    <li class="list-group-item">Vestibulum at eros</li>
+				  </ul>
+				  <div class="card-body">
+				    <a href="#" class="card-link">Card link</a>
+				    <a href="#" class="card-link">Another link</a>
+				  </div>
 				</div>
 			</div>
+			<div class="col-sm-6">			
+				
 		</div>
 		<div class="row">
-			<div class="title_line">
-				<h5>你好，XXXX！请选择支付方式</h5>
-			</div>	
+			
 		</div>
 		<div class="row">
 			<div class="col-sm-12">	
-				<div class="pay-box d-block">
-	              <div class="custom-control custom-radio">
-	                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-	                <label class="custom-control-label" for="credit"><span id="alipay-pay">&nbsp;&nbsp;&nbsp;</spa</label>
-	              </div>
-	              <div class="custom-control custom-radio">
-	                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-	                <label class="custom-control-label" for="debit"><span id="wechat-pay">&nbsp;&nbsp;&nbsp;微信支付</span></label>
-	              </div>
-	            </div>
-				<!-- <ul class=" pay-box ">
-				                    <li class="" style=" margin-right: 10px;display:inline;">
-				                        <label>
-				                            <input type="radio" index="0" value="zfb" class="paytypeicon" checked="checked" name="paytypeicon" style="margin-left:2px;">
-				                            <span id="alipay-pay">&nbsp;&nbsp;&nbsp;</span>
-				                        </label>
-				                    </li>
-				                    <li style="width:170px; display:inline;" class="">
-				                        <label>
-				                            <input index="1" type="radio" value="weixin" class="paytypeicon" name="paytypeicon">
-				                            <span id="wechat-pay">&nbsp;&nbsp;&nbsp;微信支付</span>
-				                        </label>
-				                    </li>                    
-				                </ul>
-				 -->
-                <div style="margin-top: 70px;"><button type="button" class="btn btn-danger" style="width: 200px;">确认支付 </button></div>
-			</div>
-			
+				
+			</div>			
 		</div>
 	</div>
     <footer class="footer">
