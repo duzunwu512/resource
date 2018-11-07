@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<style>
+.introjs-hint {
+    box-sizing: content-box;
+    position: absolute;
+    background: 0 0;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+}
+
+a {
+    color: #08c;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+.introjs-hint-pulse {
+    box-sizing: content-box;
+    width: 10px;
+    height: 10px;
+    border: 5px solid rgba(60,60,60,.27);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: rgba(136,136,136,.24);
+    z-index: 10;
+    position: absolute;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.introjs-hint-dot {
+	box-sizing: content-box;
+	border: 10px solid rgba(146,146,146,.36);
+	background: 0 0;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	height: 50px;
+	width: 50px;
+	-webkit-animation: introjspulse 3s ease-out;
+	-moz-animation: introjspulse 3s ease-out;
+	animation: introjspulse 3s ease-out;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	z-index: 1;
+	opacity: 0
+}
+
+@-webkit-keyframes introjspulse {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0
+	}
+
+	25% {
+		-webkit-transform: scale(0);
+		opacity: .1
+	}
+
+	50% {
+		-webkit-transform: scale(0.1);
+		opacity: .3
+	}
+
+	75% {
+		-webkit-transform: scale(0.5);
+		opacity: .5
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 0
+	}
+}
+
+@-moz-keyframes introjspulse {
+	0% {
+		-moz-transform: scale(0);
+		opacity: 0
+	}
+
+	25% {
+		-moz-transform: scale(0);
+		opacity: .1
+	}
+
+	50% {
+		-moz-transform: scale(0.1);
+		opacity: .3
+	}
+
+	75% {
+		-moz-transform: scale(0.5);
+		opacity: .5
+	}
+
+	100% {
+		-moz-transform: scale(1);
+		opacity: 0
+	}
+}
+
+@keyframes introjspulse {
+	0% {
+		transform: scale(0);
+		opacity: 0
+	}
+
+	25% {
+		transform: scale(0);
+		opacity: .1
+	}
+
+	50% {
+		transform: scale(0.1);
+		opacity: .3
+	}
+
+	75% {
+		transform: scale(0.5);
+		opacity: .5
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 0
+	}
+}
+</style>
+</head>
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+<style type="text/css">
+
+</style>
+<body>
+
+<a class="introjs-hint" style="left: 917px;top: 30px;">
+	<div class="introjs-hint-dot"></div>
+	<div class="introjs-hint-pulse"></div>
+</a>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
